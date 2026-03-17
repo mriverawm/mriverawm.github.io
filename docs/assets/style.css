@@ -1,0 +1,95 @@
+/* Estilos para el Perfil de QA Senior */
+
+body {
+    /* Gradiente profesional en tonos oscuros/azulados */
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #f8fafc;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    max-width: 600px;
+}
+
+/* Estilo de la imagen de perfil */
+.backdrop.linktree {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid #38bdf8; /* Azul cyan para resaltar */
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.backdrop.linktree:hover {
+    transform: scale(1.05);
+}
+
+/* Tipografía */
+h2 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 5px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+p {
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* Botones Modernos */
+.btn-outline-light {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 12px !important; /* Bordes más suaves */
+    color: #f8fafc !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    backdrop-filter: blur(5px); /* Efecto cristal */
+}
+
+.btn-outline-light:hover {
+    background: #38bdf8 !important; /* Color de acento al pasar el mouse */
+    color: #0f172a !important;
+    border-color: #38bdf8 !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+/* Efecto de vibración suave para el botón principal (LinkedIn) */
+.shake {
+    animation: subtle-float 3s ease-in-out infinite;
+}
+
+@keyframes subtle-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Footer */
+.text-center a {
+    text-decoration: none;
+    font-size: 0.75rem;
+    color: #94a3b8 !important;
+    transition: color 0.3s;
+}
+
+.text-center a:hover {
+    color: #38bdf8 !important;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 480px) {
+    .btn-outline-light {
+        width: 95% !important;
+    }
+}
